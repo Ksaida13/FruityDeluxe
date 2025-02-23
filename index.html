@@ -38,7 +38,7 @@
 
       <!-- Unity Canvas -->
     <canvas id="unity-canvas" width=720 height=1280 style="width: 720px; height: 1280px; background: #231F20"></canvas>
-    <script src="Build/build0.loader.js"></script>
+    <script src="Build/fruit_build.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -56,9 +56,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/build0.data.unityweb",
-        frameworkUrl: "Build/build0.framework.js.unityweb",
-        codeUrl: "Build/build0.wasm.unityweb",
+        dataUrl: "Build/fruit_build.data.unityweb",
+        frameworkUrl: "Build/fruit_build.framework.js.unityweb",
+        codeUrl: "Build/fruit_build.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "CandyPlates",
